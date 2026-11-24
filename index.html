@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KOPI KALA - katalog kopi lokal dengan cita rasa istimewa.">
+  <title>KOPI KALA - Local Coffee Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+  <header class="site-header">
+    <a href="#home" class="logo">KOPI KALA<span>.</span><small>LOCAL COFFEE EXPERIENCE</small></a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#product">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Ganti tema" title="Ganti tema"><i class="fa-solid fa-moon"></i></button>
+      <button class="hamburger icon-btn" id="hamburger" aria-label="Buka menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow"><span></span> GOOD COFFEE, GOOD MOOD</p>
+        <h1>Temukan Cerita<br><em>di Setiap Tegukan.</em></h1>
+        <p class="hero-desc">Kopi pilihan, diracik dengan sepenuh hati. Temani harimu dengan rasa yang sederhana namun berkesan.</p>
+        <a href="#product" class="btn btn-primary">Jelajahi Menu <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-note"><span>01</span> / LOCAL COFFEE, MADE WITH CARE</div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=85" alt="Barista sedang menyiapkan kopi">
+          <div class="image-stamp"><strong>EST.</strong><span>2021<br>RANGKASBITUNG</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">CERITA KAMI</p>
+          <h2 class="section-heading">Lebih dari sekadar<br><em>secangkir kopi.</em></h2>
+          <p>KOPI KALA hadir dari kecintaan terhadap kopi lokal dan momen sederhana yang tercipta di sekitarnya. Kami memilih biji kopi berkualitas dari petani Indonesia, lalu meraciknya menjadi minuman yang nyaman dinikmati kapan saja.</p>
+          <p>Setiap menu dibuat dengan perhatian pada rasa, kualitas bahan, dan pengalaman pelanggan. Karena bagi kami, kopi yang baik selalu punya cerita.</p>
+          <div class="values-list">
+            <div><i class="fa-solid fa-seedling"></i><span><b>Biji kopi pilihan</b><small>Mendukung hasil bumi lokal.</small></span></div>
+            <div><i class="fa-solid fa-mug-hot"></i><span><b>Diracik sepenuh hati</b><small>Rasa seimbang di setiap sajian.</small></span></div>
+            <div><i class="fa-solid fa-heart"></i><span><b>Hangat dan bersahabat</b><small>Tempat untuk menikmati jeda.</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section product-section">
+      <div class="container">
+        <div class="section-top">
+          <div><p class="eyebrow">PILIHAN UNTUKMU</p><h2 class="section-heading">Menu <em>Favorit.</em></h2></div>
+          <p class="section-intro">Dari kopi klasik hingga racikan spesial, temukan teman terbaik untuk harimu.</p>
+        </div>
+        <div class="filter-buttons" role="group" aria-label="Filter kategori menu">
+          <button class="filter-btn active" data-filter="all">Semua Menu</button>
+          <button class="filter-btn" data-filter="espresso">Espresso Based</button>
+          <button class="filter-btn" data-filter="milk">Milk Coffee</button>
+          <button class="filter-btn" data-filter="manual">Manual Brew</button>
+          <button class="filter-btn" data-filter="noncoffee">Non Coffee</button>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-category="milk">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85" alt="Iced cafe latte"><span class="product-tag">BEST SELLER</span></div>
+            <div class="product-info"><div class="product-meta"><span>MILK COFFEE</span><span>01</span></div><h3>Iced Cafe Latte</h3><p>Espresso lembut berpadu dengan susu segar dan es.</p><div class="product-bottom"><strong>Rp25.000</strong><button class="btn-detail" data-title="Iced Cafe Latte" data-price="Rp25.000" data-desc="Perpaduan espresso pilihan dan susu segar dengan rasa creamy yang lembut. Disajikan dingin untuk menemani aktivitasmu." data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="espresso">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85" alt="Iced americano"></div>
+            <div class="product-info"><div class="product-meta"><span>ESPRESSO BASED</span><span>02</span></div><h3>Iced Americano</h3><p>Espresso dengan air dan es, bersih serta menyegarkan.</p><div class="product-bottom"><strong>Rp20.000</strong><button class="btn-detail" data-title="Iced Americano" data-price="Rp20.000" data-desc="Espresso dengan karakter rasa kopi yang tegas, disajikan bersama air dingin dan es batu. Pilihan tepat untuk pencinta kopi klasik." data-img="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="milk">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&w=700&q=85" alt="Caramel macchiato"></div>
+            <div class="product-info"><div class="product-meta"><span>MILK COFFEE</span><span>03</span></div><h3>Caramel Macchiato</h3><p>Rasa creamy dengan sentuhan manis karamel.</p><div class="product-bottom"><strong>Rp28.000</strong><button class="btn-detail" data-title="Caramel Macchiato" data-price="Rp28.000" data-desc="Susu creamy, espresso, dan saus karamel berpadu dalam rasa manis yang seimbang. Cocok untuk kamu yang menyukai kopi dengan sentuhan dessert." data-img="https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="manual">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=85" alt="Manual brew coffee"></div>
+            <div class="product-info"><div class="product-meta"><span>MANUAL BREW</span><span>04</span></div><h3>V60 Pour Over</h3><p>Kopi seduh manual dengan aroma dan karakter khas.</p><div class="product-bottom"><strong>Rp23.000</strong><button class="btn-detail" data-title="V60 Pour Over" data-price="Rp23.000" data-desc="Diseduh manual menggunakan metode pour over untuk menonjolkan aroma, keasaman, dan karakter asli biji kopi pilihan." data-img="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="espresso">
+            <div class="product-image"><img src="https://awsimages.detik.net.id/community/media/visual/2019/07/01/844ad4d1-38e3-4d89-b45f-f2fb172dcacc.jpeg?w=1200" alt="Cappuccino"></div>
+            <div class="product-info"><div class="product-meta"><span>ESPRESSO BASED</span><span>05</span></div><h3>Cappuccino</h3><p>Espresso, susu steamed, dan foam yang lembut.</p><div class="product-bottom"><strong>Rp24.000</strong><button class="btn-detail" data-title="Cappuccino" data-price="Rp24.000" data-desc="Kopi espresso dengan komposisi susu steamed dan foam lembut. Menghadirkan rasa kopi yang seimbang dan tekstur yang halus." data-img="https://images.unsplash.com/photo-1534778101976-6289497c1ab6?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+          <article class="product-card" data-category="noncoffee">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=85" alt="Matcha latte"></div>
+            <div class="product-info"><div class="product-meta"><span>NON COFFEE</span><span>06</span></div><h3>Iced Matcha Latte</h3><p>Matcha pilihan dan susu dengan rasa earthy.</p><div class="product-bottom"><strong>Rp26.000</strong><button class="btn-detail" data-title="Iced Matcha Latte" data-price="Rp26.000" data-desc="Matcha dengan aroma khas dan rasa earthy, dipadukan dengan susu segar. Alternatif nikmat untuk kamu yang ingin menikmati minuman non-kopi." data-img="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=900&q=85">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div></div>
+          </article>
+        </div>
+        <p class="menu-note">* Temukan cita rasa favoritmu dalam setiap sajian KOPI KALA..</p>
+      </div>
+    </section>
+
+    <section class="quote-banner">
+      <div class="container"><i class="fa-solid fa-quote-left"></i><h2>“Luangkan waktu, nikmati kopi,<br><em>rayakan hal-hal sederhana.”</em></h2><span>KOPI KALA · YOUR DAILY COFFEE COMPANION</span></div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-top"><div><p class="eyebrow">DI BALIK SECANGKIR KOPI</p><h2 class="section-heading">Kala <em>Moments.</em></h2></div><p class="section-intro">Suasana, proses, dan cerita yang membuat setiap cangkir terasa istimewa.</p></div>
+        <div class="slider-container">
+          <div class="slide active"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1400&q=85" alt="Interior kedai kopi"><div class="slide-caption"><span>01 / THE PLACE</span><strong>Ruang nyaman untuk jeda sejenak.</strong></div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=85" alt="Proses menyeduh kopi"><div class="slide-caption"><span>02 / THE PROCESS</span><strong>Diracik dengan perhatian pada setiap detail.</strong></div></div>
+          <div class="slide"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=85" alt="Kopi siap disajikan"><div class="slide-caption"><span>03 / THE MOMENT</span><strong>Temukan favoritmu di setiap tegukan.</strong></div></div>
+          <button class="slider-btn prev" id="prevSlide" aria-label="Foto sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="slider-btn next" id="nextSlide" aria-label="Foto berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-top"><div><p class="eyebrow">SAPA KAMI</p><h2 class="section-heading">Let's talk <em>coffee.</em></h2></div><p class="section-intro">Punya pertanyaan atau ingin tahu lebih banyak tentang menu kami? Kirim pesan melalui formulir berikut.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Temukan Kami</h3>
+            <p><i class="fa-solid fa-location-dot"></i><span>Jl.Jendral Sudirman No. 10, Rangkasbitung, Banten</span></p>
+            <p><i class="fa-solid fa-phone"></i><a href="https://wa.me/6282297984837" target="_blank" rel="noopener noreferrer">+62 822-9798-4837</a></p>
+            <p><i class="fa-solid fa-envelope"></i><span>kopikala2026@gmail.com</span></p>
+            <div class="opening-hours"><h4>Jam Operasional</h4><p>Senin – Jumat <span>08.00 – 21.00</span></p><p>Sabtu – Minggu <span>09.00 – 22.00</span></p></div>
+            <div class="social-links"><a href="https://www.instagram.com/muhammadazizi06?utm_source=ig_web_button_share_sheet&lqvp=ZDNlZDc0MzIxNw==" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/6282297984837" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></div>
+          </div>
+          <div class="contact-form-box">
+            <h3>Kirim Pesan</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-group"><label for="name">Nama lengkap</label><input type="text" id="name" placeholder="Nama kamu"><small class="error-msg" id="nameError"></small></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="kopikala2026@gmail.com"><small class="error-msg" id="emailError"></small></div>
+              <div class="form-group"><label for="message">Pesan</label><textarea id="message" rows="4" placeholder="Tulis pesan atau pertanyaanmu..."></textarea><small class="error-msg" id="msgError"></small></div>
+              <button type="submit" class="btn btn-primary submit-btn">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <div id="formSuccess" class="success-msg" role="status">Pesan berhasil divalidasi. Terima kasih sudah menghubungi KOPI KALA!</div>
+            <p class="form-note">* Ada pertanyaan atau masukan? Kami siap mendengarkan Anda .</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a href="#home" class="logo">KOPI KALA<span>.</span></a><p>Good coffee, good mood, every day.</p><small>© 2026 KOPI KALA. Dibuat untuk proyek pembelajaran.</small></div></footer>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-modal" id="closeModal" aria-label="Tutup detail">&times;</button>
+      <img id="modalImg" src="" alt="Foto produk">
+      <div class="modal-desc"><p class="eyebrow">KOPI KALA MENU</p><h3 id="modalTitle"></h3><strong id="modalPrice" class="modal-price"></strong><p id="modalText"></p><a href="#contact" class="btn btn-primary" id="modalContact">Tanyakan Menu Ini <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
